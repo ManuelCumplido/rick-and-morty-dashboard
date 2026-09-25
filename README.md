@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick and Morty Dashboard
 
-## Getting Started
+A dashboard built with **Next.js** and **TypeScript** as a hands-on project to explore modern web development concepts using the Next.js App Router.
 
-First, run the development server:
+The application consumes the **Rick and Morty API** to display characters, view individual character details, and manage favorite characters using Redux Toolkit.
+
+## ✨ Features
+
+- Dashboard navigation using the Next.js App Router
+- Rick and Morty character listing
+- Infinite scroll for dynamically loading characters
+- Dynamic pages with individual character information
+- Favorites management with Redux Toolkit
+- Favorites persistence using `localStorage`
+- Example API Route for client-server communication
+- Global state management with Redux
+- Image optimization with `next/image`
+- Dynamic metadata for character pages
+- Responsive UI with Tailwind CSS
+
+## 🛠️ Technologies
+
+- Next.js
+- React
+- TypeScript
+- Redux Toolkit
+- React Redux
+- Tailwind CSS
+- React Icons
+- Rick and Morty API
+
+## 🚀 Getting Started
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📍 Main Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/dashboard/main` — Main dashboard
+- `/dashboard/counter` — State management and API Route example
+- `/dashboard/characters` — Character listing with infinite scroll
+- `/dashboard/favorites` — Favorite characters
+- `/dashboard/characters/[name]` — Individual character details
+- `/api/counter` — Example API Route with `GET` and `POST`
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── api/
+│   └── dashboard/
+├── characters/
+├── components/
+├── store/
+└── shopping-car/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app` — Pages, layouts, dynamic routes, and API Routes
+- `characters` — Character-related components, interfaces, and data fetching
+- `components` — Shared dashboard components and navigation
+- `store` — Redux store, slices, and persistence
+- `shopping-car` — Components used for the counter exercises
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 What I Practiced
 
-## Deploy on Vercel
+This project was developed as part of my Next.js learning journey and helped me practice:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Server Components and Client Components
+- App Router
+- Dynamic Routes
+- Data Fetching
+- Caching
+- Dynamic Metadata
+- API Routes
+- Infinite Scroll
+- Redux Toolkit
+- Browser State Persistence
+- TypeScript
+- Component-based Architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 Scripts
+
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
+
+## 🔗 API
+
+Character data is provided by the Rick and Morty API.
